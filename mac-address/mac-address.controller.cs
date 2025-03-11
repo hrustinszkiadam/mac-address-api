@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("[controller]")]
-public class MacController(MacAddressContext _context) : ControllerBase {
+public class MacAddressController(MacAddressContext _context) : ControllerBase {
   private readonly MacAddressContext db = _context;
 
   [HttpGet("/mac")]
