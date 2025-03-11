@@ -1,6 +1,7 @@
 # MAC Address API
 
 **NOTE:** The API requires a mysql server to run
+
 _Request examples_: [mac-api.http](./mac-api.http)
 
 ## Endpoints
