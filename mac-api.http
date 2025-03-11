@@ -1,0 +1,39 @@
+@host = http://localhost:5160
+
+### OpenAPI
+
+GET {{host}}/openapi/v1.json
+
+### Get All Mac Addresses
+
+GET {{host}}/mac
+
+### Get Mac Address by ID
+
+GET {{host}}/mac/1
+
+### Create Mac Address
+
+POST {{host}}/mac
+Content-Type: application/json
+
+{
+  "address": "00:00:00:00:00:01",
+  "validUntil": "2026-12-31T23:59:59Z",
+  "email": "test.address@gmail.com"
+}
+
+### Update Mac Address
+
+PATCH {{host}}/mac/1
+Content-Type: application/json
+
+{
+  "email": "address.test@gmail.com"
+}
+
+### Delete Mac Address
+
+DELETE {{host}}/mac/1
+
+###
