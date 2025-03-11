@@ -40,7 +40,7 @@ Content-Type: application/json
 
 ### Update an address
 
-> The same validation rules apply for this endpoint as when creating a new address
+> The same validation rules apply for this endpoint as for creating a new address
 
 ```http
 PATCH http://localhost:5160/mac/{id}
