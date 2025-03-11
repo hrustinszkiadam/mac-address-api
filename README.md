@@ -22,9 +22,9 @@ GET http://localhost:5160/{id}
 
 ### Create a new address
 
-> _address_ must be a valid MAC address separated by either **colons** or **dashes**
+> _address_ must be a valid MAC address separated by either **colons** or **dashes** and must be **unique** in the database
 >
-> _validUntil_ must be a string that can be parsed as a **DateTime**
+> _validUntil_ must be a string that can be parsed as a **DateTime** and must **be in the future**
 >
 > _email_ must be a valid **email address**
 
