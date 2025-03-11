@@ -8,18 +8,6 @@ public class MacAddress {
   public DateTime ValidUntil { get; set; }
 }
 
-public class CreateMacAddressDto {
-  public string Address { get; set; } = "";
-  public string Email { get; set; } = "";
-  public DateTime ValidUntil { get; set; }
-}
-
-public class UpdateMacAddressDto {
-  public string? Address { get; set; }
-  public string? Email { get; set; }
-  public DateTime? ValidUntil { get; set; }
-}
-
 public class MacAddressValidator: AbstractValidator<MacAddress> {
     public MacAddressValidator(MacAddressContext db) {
       RuleFor(x => x.Address)
